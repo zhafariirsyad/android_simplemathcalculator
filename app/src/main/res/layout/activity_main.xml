@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp"
+    android:orientation="vertical">
+
+    <!--  Title  -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pertemuan 04"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zhafari Irsyad - 41519120050"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/blue_two"/>
+    <!--  End Title  -->
+
+    <!--  Question  -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_weight="2"
+        android:id="@+id/questionTxtView"/>
+    <!--  End Question  -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/answerText"
+            android:hint="Masukkan Jawaban"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Jawab"
+            android:layout_marginLeft="30dp"
+            android:onClick="clickAnswerButton"
+            android:id="@+id/answerButton"/>
+
+    </LinearLayout>
+
+    <!--  Evaluation  -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Evaluasi"
+        android:textSize="20dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:id="@+id/titleEvaluationTxtView"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:id="@+id/contentEvaluationTxtView"/>
+    <!--  End Evaluation  -->
+
+</androidx.appcompat.widget.LinearLayoutCompat>
